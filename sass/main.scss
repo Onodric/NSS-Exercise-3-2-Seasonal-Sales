@@ -1,1 +1,44 @@
 @import '../../../../template';
+$bg-color: rgba(200,230,230,.5);
+
+
+#wrapper header h3,
+#wrapper header select {
+  display: inline;
+  margin: .1em .5em;
+}
+
+#wrapper header select {
+  padding: .25em;
+  border-radius: .2em;
+  box-shadow: 0 2px 10px rgba(30,30,60,.7);
+}
+
+#productCards {
+  width: 90%;
+  margin: 1em auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: $bg-color;
+  border-radius: 1em;
+  box-shadow: 0px 2px 5px rgba(34,33,42,.7);
+}
+
+#productCards h2,
+#productCards p {
+  margin: .1em auto;
+}
+
+.product-card {
+  background: $bg-color;
+  flex: 0 1 25%;
+  margin: 1%;
+  padding: 1em;
+  box-shadow: 0px 2px 5px rgba(34,33,42,.7);
+  border-radius: 1em;
+}
+
+.hidden {
+  display: none;
+}
